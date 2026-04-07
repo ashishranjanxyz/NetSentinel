@@ -1,4 +1,4 @@
-# 🛡️ NetSentinel — AI-Powered Network Vulnerability Scanner
+#  NetSentinel — AI-Powered Network Vulnerability Scanner
 
 <div align="center">
 
@@ -13,19 +13,19 @@
 
 ---
 
-## 🎯 What is NetSentinel?
+##  What is NetSentinel?
 
 NetSentinel is a **pentesting tool** that goes beyond traditional port scanning. It uses **AI/ML models** to:
 
-- 🔍 **Scan** open ports and enumerate services (via Nmap)
-- 🤖 **Classify** risk level (LOW / MEDIUM / HIGH) using a **Random Forest classifier**
-- 🚨 **Detect anomalies** in port profiles using **Isolation Forest** (unsupervised ML)
-- 📄 **Generate** beautiful HTML + JSON vulnerability reports
-- 💻 **Display** rich, color-coded terminal output
+-  **Scan** open ports and enumerate services (via Nmap)
+-  **Classify** risk level (LOW / MEDIUM / HIGH) using a **Random Forest classifier**
+-  **Detect anomalies** in port profiles using **Isolation Forest** (unsupervised ML)
+-  **Generate** beautiful HTML + JSON vulnerability reports
+-  **Display** rich, color-coded terminal output
 
 ---
 
-## 🧠 AI/ML Architecture
+##  AI/ML Architecture
 
 | Component | Algorithm | Purpose |
 |-----------|-----------|---------|
@@ -43,7 +43,7 @@ Traditional scanners just look up known bad ports. NetSentinel goes further — 
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.9+
@@ -76,15 +76,15 @@ sudo python main.py --target 192.168.1.0/24 --type aggressive
 sudo python main.py --target scanme.nmap.org --output results/
 ```
 
-> ℹ️ **Note:** `sudo` is required for SYN scanning. Run as admin on Windows.
+>  **Note:** `sudo` is required for SYN scanning. Run as admin on Windows.
 
 ---
 
-## 📊 Sample Output
+##  Sample Output
 
 ### Terminal (Rich CLI)
 ```
-🛡️ NetSentinel v1.0
+ NetSentinel v1.0
 
   ✓ Random Forest (100 estimators) loaded
   ✓ Isolation Forest loaded
@@ -101,11 +101,11 @@ sudo python main.py --target scanme.nmap.org --output results/
   23/tcp    telnet     —            CRITICAL Plaintext protocol
   3306/tcp  mysql      MySQL 5.7    HIGH     Direct DB exposure
 
-  🤖 AI Analysis:
+   AI Analysis:
    • Found 3 open port(s) with a total risk score of 9.
-   • ⚠️  Critical services detected (Telnet)
-   • 🗄️  Database ports are publicly exposed.
-   • ⚡ Legacy/insecure protocols detected (Telnet).
+   •   Critical services detected (Telnet)
+   •   Database ports are publicly exposed.
+   •  Legacy/insecure protocols detected (Telnet).
 ```
 
 ### HTML Report
@@ -118,7 +118,7 @@ A styled, dark-themed HTML report is generated in your output directory with:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 NetSentinel/
@@ -135,7 +135,7 @@ NetSentinel/
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 | Flag | Default | Description |
 |------|---------|-------------|
@@ -162,7 +162,7 @@ Extend `get_feature_vector()` in `scanner.py` and update `FEATURE_NAMES` in `mod
 
 ---
 
-## ⚠️ Legal Disclaimer
+##  Legal Disclaimer
 
 > **NetSentinel is for authorized security testing only.**
 > 
@@ -174,13 +174,13 @@ Extend `get_feature_vector()` in `scanner.py` and update `FEATURE_NAMES` in `mod
 
 ---
 
-## 📄 License
+##  License
 
 MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 PRs welcome! Ideas for contribution:
 - CVE integration (match service versions to known CVEs)
